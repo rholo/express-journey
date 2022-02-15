@@ -12,11 +12,11 @@ app.listen(port, () => {
 app.get('/', (request, response) => {
   try {
     response.json({
-      desc: 'welcome to my portfolio node API',
+      description: 'welcome to my node API portfolio',
       version: 1.0,
       path: 'API',
       availableRoutes: [
-        'portfolio'
+        '/portfolio'
       ]
     });
   } catch (error) {
