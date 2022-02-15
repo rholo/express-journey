@@ -12,5 +12,9 @@ app.listen(port, () => {
 app.get('/', (request, response) => {
   response.json(profile);
 });
+app.get('/api/portfolio', (request, response) => {
+  response.json(profile);
+});
+
 
 console.log(`Hello Node.js v${process.versions.node}!`);
