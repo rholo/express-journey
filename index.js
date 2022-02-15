@@ -16,7 +16,7 @@ app.get('/', (request, response) => {
       version: 1.0,
       path: 'API',
       availableRoutes: [
-        '/portfolio'
+        'api/portfolio'
       ]
     });
   } catch (error) {
