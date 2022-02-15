@@ -10,10 +10,26 @@ app.listen(port, () => {
 });
 
 app.get('/', (request, response) => {
-  response.json(profile);
+  try {
+    response.json({
+      desc: 'welcome to my portfolio node API',
+      version: 1.0,
+      path: 'API',
+      availableRoutes: [
+        'portfolio'
+      ]
+    });
+  } catch (error) {
+    return response.status(500).send('Error server')
+  }
+
 });
 app.get('/api/portfolio', (request, response) => {
-  response.json(profile);
+  try {
+    response.json(profile);
+  } catch (error) {
+    return response.status(500).send('Error server')
+  }
 });
 
 

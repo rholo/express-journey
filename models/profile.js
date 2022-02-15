@@ -5,13 +5,13 @@ module.exports = {
     title: 'Front-end developer and UI designer',
     avatar: '',
     description: 'this is a demo with node and express!',
+    links: [
+      { title: 'GitHub', url: '//github.com/rholo' },
+      { title: 'LinkedIn', url: '//linkedin.com/in/rholo/' },
+      { title: 'Codepen', url: 'https://codepen.io/rholo' },
+      { title: 'NPM', url: 'https://www.npmjs.com/~rholo' }
+    ],
   },
-  links: [
-    { desc: '', url: 'https://', name: 'LinkdeIn' },
-    { desc: '', url: 'https://', name: 'GitHub' },
-    { desc: '', url: 'https://', name: 'GitLab' },
-    { desc: '', url: 'https://', name: 'CV' }
-  ],
   projects: [
     {
       name: 'Adere.so',
