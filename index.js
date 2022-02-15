@@ -1,9 +1,10 @@
 // run `node index.js` in the terminal
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 
-const { profile } = require('./models/profile');
+const { profile } = require('./models/profile')
+// const projects = require('./models/projects')
 
 app.listen(port, () => {
   console.log('running server');
@@ -16,7 +17,7 @@ app.get('/', (request, response) => {
       version: 1.0,
       path: 'API',
       availableRoutes: [
-        'api/portfolio'
+        '/api/portfolio'
       ]
     });
   } catch (error) {
