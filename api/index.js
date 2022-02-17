@@ -35,5 +35,6 @@ app.get('/api/portfolio', (request, response) => {
         return response.status(500).send('Error server');
     }
 });
+exports.default = app;
 // console.log(`Hello Node.js v${process.versions.node}!`);
 //# sourceMappingURL=index.js.map
