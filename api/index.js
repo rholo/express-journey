@@ -14,7 +14,7 @@ app.listen(port, () => {
 });
 app.get('/', (request, response) => {
     try {
-        response.json({
+        response.status(200).json({
             description: 'welcome to my node API portfolio',
             version: 1.0,
             path: 'API',
@@ -29,7 +29,7 @@ app.get('/', (request, response) => {
 });
 app.get('/api/portfolio', (request, response) => {
     try {
-        response.json(profile_1.default);
+        response.status(200).json(profile_1.default);
     }
     catch (error) {
         return response.status(500).send('Error server');

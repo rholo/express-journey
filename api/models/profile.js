@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const profile = {
     nickname: 'Rholo',
-    name: 'Rodrigo Ahumada Chamorro',
+    name: 'Rodrigo Ahumada',
     title: 'Front-end developer && UI designer',
     avatar: '//rholo.cl/assets/avatar.jpg',
     description: 'this is a demo with node and express!',
