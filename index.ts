@@ -34,5 +34,5 @@ app.get('/api/portfolio', (request: Request, response: Response) => {
   }
 });
 
-
+export default app;
 // console.log(`Hello Node.js v${process.versions.node}!`);
