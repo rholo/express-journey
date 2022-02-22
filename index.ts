@@ -1,4 +1,3 @@
-// run `node index.js` in the terminal
 import express, { Request, Response } from 'express';
 
 const app = express();
@@ -15,7 +14,7 @@ app.get('/', (request: Request, response: Response) => {
   try {
     response.status(200).json({
       description: 'welcome to my node API portfolio',
-      version: 1.0,
+      version: '0.0.4',
       path: 'API',
       availableRoutes: [
         '/api/portfolio'
@@ -42,4 +41,3 @@ app.get('/api/projects', (request: Request, response: Response) => {
 });
 
 export default app;
-// console.log(`Hello Node.js v${process.versions.node}!`);
