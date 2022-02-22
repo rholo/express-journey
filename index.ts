@@ -4,6 +4,7 @@ const app = express();
 const port = 3001;
 
 import profile from './models/profile'
+import projects from './models/projects'
 
 app.listen(port, () => {
   // console.log('running server');
@@ -27,6 +28,13 @@ app.get('/', (request: Request, response: Response) => {
 app.get('/api/portfolio', (request: Request, response: Response) => {
   try {
     response.status(200).json(profile);
+  } catch (error) {
+    return response.status(500).send('Error server')
+  }
+});
+app.get('/api/projects', (request: Request, response: Response) => {
+  try {
+    response.status(200).json(projects);
   } catch (error) {
     return response.status(500).send('Error server')
   }
