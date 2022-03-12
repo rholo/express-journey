@@ -3,63 +3,73 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const projects = [
     {
         name: 'Desk - Postcenter',
+        hash: 'adereso',
         company: 'Adere.so',
         description: 'Tech lead Front-end...',
-        technologies: ['AngularJS', 'Vue', 'Vuex', 'AWS', 'Angular']
+        tags: ['AngularJS', 'Vue', 'AWS', 'Angular']
     },
     {
         name: 'Giwer',
+        hash: 'giwer',
         company: 'Mall Plaza',
         description: 'As UI Developer working with React developing A/B Testing, new features...',
-        technologies: ['React', 'PWA', 'Angular']
+        tags: ['React', 'PWA', 'Angular']
     },
     {
         name: 'Cardif',
+        hash: 'cardif',
         company: 'BNP Paribas Cardif',
         description: '',
-        technologies: ['React', 'JavaScript']
+        tags: ['React', 'JavaScript']
     },
     {
         name: 'Gestcon',
+        hash: 'enel',
         company: 'Enel',
         description: 'UI Designer and developer creating templates for custom CMS develop with react',
-        technologies: ['React']
+        tags: ['React']
     },
     {
-        name: 'Sistema Webpay',
+        name: 'Sistema WEPBAY',
+        hash: 'bbva',
         company: 'BBVA',
         description: '',
-        technologies: ['Angular', 'AngularJS']
+        tags: ['Angular', 'AngularJS']
     },
     {
         name: 'SOAP',
+        hash: 'segurods-falabella',
         company: 'Seguros Falabella',
         description: '',
-        technologies: []
+        tags: ['javascript', 'angularJS']
     },
     {
-        name: '',
+        name: 'Corrector SIMCE',
+        hash: 'agce',
         company: 'AGCE - Ministerio de Educacion',
         description: '',
-        technologies: ['JavaScript', 'JQuery']
+        tags: ['JavaScript', 'JQuery']
     },
     {
-        name: '',
+        name: 'Factoring',
+        hash: 'factoring-security',
         company: 'Factoring Security',
         description: 'Design and Create UI Kit template for custom CMS develop with angularJS',
-        technologies: ['AngularJS', 'HTML', 'CSS']
+        tags: ['AngularJS', 'HTML', 'CSS']
     },
     {
         name: 'Portal de Bibliotecas y Museos de Chile',
+        hash: 'dibam',
         company: 'Servicio Nacional del Patrimonio Cultural',
         description: 'Develop responsive UI for main website...',
-        technologies: ['JavaScript', 'HTML', 'CSS']
+        tags: ['JavaScript', 'HTML', 'CSS']
     },
     {
         name: 'Landing Summers',
+        hash: 'maui-and-sons',
         company: 'Maui and Sons',
         description: 'Develop Landing page for new summer season',
-        technologies: ['Wordpress', 'HTML', 'CSS']
+        tags: ['Wordpress', 'HTML', 'CSS']
     }
 ];
 exports.default = projects;

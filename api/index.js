@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3001;
 const profile_1 = __importDefault(require("./models/profile"));
+const projects_1 = __importDefault(require("./models/projects"));
 app.listen(port, () => {
     // console.log('running server');
 });
@@ -28,6 +29,14 @@ app.get('/', (request, response) => {
 app.get('/api/portfolio', (request, response) => {
     try {
         response.status(200).json(profile_1.default);
+    }
+    catch (error) {
+        return response.status(500).send('Error server');
+    }
+});
+app.get('/api/projects', (request, response) => {
+    try {
+        response.status(200).json(projects_1.default);
     }
     catch (error) {
         return response.status(500).send('Error server');
