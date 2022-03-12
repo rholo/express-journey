@@ -8,39 +8,61 @@ const app = (0, express_1.default)();
 const port = 3001;
 const profile_1 = __importDefault(require("./models/profile"));
 const projects_1 = __importDefault(require("./models/projects"));
+const socialNetworks_1 = require("./models/socialNetworks");
 app.listen(port, () => {
-    // console.log('running server');
+    // console.log('running server'); 
 });
-app.get('/', (request, response) => {
+app.get('/', (_request, response) => {
     try {
         response.status(200).json({
-            description: 'welcome to my node API portfolio',
+            description: 'welcome to my Node API portfolio',
             version: '0.0.4',
-            path: 'API',
+            path: 'api',
             availableRoutes: [
-                '/api/portfolio'
+                '/api/portfolio',
+                '/api/projects'
             ]
         });
     }
     catch (error) {
-        return response.status(500).send('Error server');
+        return errorHandler(response, 500);
     }
 });
-app.get('/api/portfolio', (request, response) => {
+app.get('/api/portfolio', (_request, response) => {
     try {
-        response.status(200).json(profile_1.default);
+        response.status(200).json(Object.assign(Object.assign({}, profile_1.default), { socialNetworks: socialNetworks_1.socialNetworks }));
     }
     catch (error) {
-        return response.status(500).send('Error server');
+        return errorHandler(response, 500);
     }
 });
-app.get('/api/projects', (request, response) => {
+app.get('/api/projects', (_request, response) => {
     try {
         response.status(200).json(projects_1.default);
     }
     catch (error) {
-        return response.status(500).send('Error server');
+        return errorHandler(response, 500);
     }
 });
+app.get('/api/project/:id', (request, response) => {
+    try {
+        response.status(200).json({
+            hash: request.params.id
+        });
+    }
+    catch (error) {
+        return errorHandler(response, 500);
+    }
+});
+const errorHandler = (response, error) => {
+    switch (error) {
+        case 500:
+            return response.status(error).send('Error server');
+        case 204:
+            return response.status(error).send('Not exist');
+        default:
+            return 'try to resolve this error soon!';
+    }
+};
 exports.default = app;
 //# sourceMappingURL=index.js.map

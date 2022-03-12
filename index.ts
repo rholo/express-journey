@@ -42,9 +42,11 @@ app.get('/api/projects', (_request: Request, response: Response) => {
   }
 });
 
-app.get('api/project/:id', (request: Request, response: Response) => {
+app.get('/api/project/:id', (request: Request, response: Response) => {
   try {
-    console.log(request.params.id)
+    response.status(200).json({
+      hash: request.params.id
+    })
   } catch (error) {
     return errorHandler(response, 500)
   }
