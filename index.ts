@@ -4,7 +4,7 @@ const app = express();
 const port = 3001;
 
 import profile from './models/profile'
-import projects from './models/projects'
+import companies from './models/companies'
 import { socialNetworks } from './models/socialNetworks'
 app.listen(port, () => {
   // console.log('running server'); 
@@ -17,7 +17,7 @@ app.get('/', (_request: Request, response: Response) => {
       path: 'api',
       availableRoutes: [
         '/api/portfolio',
-        '/api/projects'
+        '/api/companies'
       ]
     });
   } catch (error) {
@@ -34,15 +34,15 @@ app.get('/api/portfolio', (_request: Request, response: Response) => {
   }
 });
 
-app.get('/api/projects', (_request: Request, response: Response) => {
+app.get('/api/companies', (_request: Request, response: Response) => {
   try {
-    response.status(200).json(projects);
+    response.status(200).json(companies);
   } catch (error) {
     return errorHandler(response, 500)
   }
 });
 
-app.get('/api/project/:id', (request: Request, response: Response) => {
+app.get('/api/company/:id', (request: Request, response: Response) => {
   try {
     response.status(200).json({
       hash: request.params.id

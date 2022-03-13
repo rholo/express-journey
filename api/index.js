@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3001;
 const profile_1 = __importDefault(require("./models/profile"));
-const projects_1 = __importDefault(require("./models/projects"));
+const companies_1 = __importDefault(require("./models/companies"));
 const socialNetworks_1 = require("./models/socialNetworks");
 app.listen(port, () => {
     // console.log('running server'); 
@@ -20,7 +20,7 @@ app.get('/', (_request, response) => {
             path: 'api',
             availableRoutes: [
                 '/api/portfolio',
-                '/api/projects'
+                '/api/companies'
             ]
         });
     }
@@ -36,15 +36,15 @@ app.get('/api/portfolio', (_request, response) => {
         return errorHandler(response, 500);
     }
 });
-app.get('/api/projects', (_request, response) => {
+app.get('/api/companies', (_request, response) => {
     try {
-        response.status(200).json(projects_1.default);
+        response.status(200).json(companies_1.default);
     }
     catch (error) {
         return errorHandler(response, 500);
     }
 });
-app.get('/api/project/:id', (request, response) => {
+app.get('/api/company/:id', (request, response) => {
     try {
         response.status(200).json({
             hash: request.params.id
