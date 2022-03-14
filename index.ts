@@ -43,10 +43,12 @@ app.get('/api/companies', (_request: Request, response: Response) => {
 });
 
 app.get('/api/company/:id', (request: Request, response: Response) => {
+  const company = companies.find(company => company.hash === request.params.id)
   try {
-    response.status(200).json({
-      hash: request.params.id
-    })
+    if (!company) {
+      errorHandler(response, 204)
+    }
+    response.status(200).json(company)
   } catch (error) {
     return errorHandler(response, 500)
   }

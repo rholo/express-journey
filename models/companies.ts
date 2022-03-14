@@ -20,7 +20,7 @@ const companies: ICompany[] = [
     name: 'Adereso',
     hash: 'adereso',
     avatar: '',
-    description: 'Tech lead Front-end...',
+    description: 'Adereso es una plataforma en la nube que te ayuda a organizar tus mensajes de WhatsApp, Facebook, Instagram, Twitter, Correo electrónico y mucho más.',
     projects: [
       {
         name: 'Desk',
@@ -63,7 +63,7 @@ const companies: ICompany[] = [
     name: 'Cardif',
     hash: 'cardif',
     avatar: '',
-    description: '',
+    description: 'BNP Paribas Cardif es una compañía de seguros francesa que comercializa productos de ahorro y de protección y servicios a través de una variedad de socios. BNP Paribas Cardif pertenece al Grupo BNP Paribas, uno de los bancos mejor calificados en el mundo.',
     projects: [
       {
         name: 'Devolución de primas',
@@ -71,7 +71,7 @@ const companies: ICompany[] = [
         role: 'Front-end dev & UI Designer',
         activities: '',
         description: '',
-        legacy: true,
+        legacy: false,
         tags: ['React', 'JavaScript'],
       },
       {
@@ -115,7 +115,8 @@ const companies: ICompany[] = [
         role: 'Front-end dev & UI Designer',
         activities: '',
         description: '',
-        legacy: true, tags: ['Angular', 'AngularJS'],
+        legacy: true,
+        tags: ['Angular', 'AngularJS'],
       }
     ]
   },
@@ -182,7 +183,7 @@ const companies: ICompany[] = [
     name: 'Servicio Nacional del Patrimonio Cultural',
     hash: 'dibam',
     avatar: '',
-    description: 'Develop responsive UI for main website...',
+    description: '',
     projects: [
       {
         name: 'Portal de Bibliotecas y Museos de Chile',
@@ -190,7 +191,7 @@ const companies: ICompany[] = [
         description: '',
         role: 'Front-end developer',
         legacy: false,
-        activities: '',
+        activities: 'Develop responsive UI for main website...',
         tags: ['JavaScript', 'HTML', 'CSS']
       },
       {
