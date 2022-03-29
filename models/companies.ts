@@ -20,15 +20,17 @@ const companies: ICompany[] = [
     name: 'Adereso',
     hash: 'adereso',
     avatar: '',
-    description: 'Tech lead Front-end...',
+    description: `Adereso es una plataforma en la nube que te ayuda a organizar 
+    tus mensajes de WhatsApp, Facebook, Instagram, Twitter, Correo electrónico y mucho más.`,
     projects: [
       {
         name: 'Desk',
         id: 'adereso_desk',
-        role: 'Tech lead front-end',
-        activities: '',
+        role: 'Front-end Tech Lead',
+        activities: 'Desarrollo de nuevas funcionalidades, modernización de plataforma web, implementación de tareas automatizadas para control de calidad de código con analizadores de código como ESlint y Prettier, pruebas unitarias, tareas de devOps.',
         legacy: false,
-        description: '',
+        description: `Responsable de todo el proceso de modernización de la plataforma web, 
+          organizar y planificar desarrollo de nuevas features y organización del equipo Front`,
         tags: ['AngularJS', 'Vue', 'AWS', 'Angular'],
       }
     ]
@@ -37,7 +39,8 @@ const companies: ICompany[] = [
     name: 'Mall plaza',
     hash: 'mall_plaza',
     avatar: '',
-    description: 'As UI Developer working with React developing A/B Testing, new features...',
+    description: `Mallplaza es una cadena de centros comerciales chilena que se 
+    encuentran distribuidos en nueve ciudades de Chile`,
     projects: [
       {
         name: 'Autoplaza',
