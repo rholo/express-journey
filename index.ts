@@ -7,7 +7,7 @@ import profile from './models/profile'
 import companies from './models/companies'
 import { socialNetworks } from './models/socialNetworks'
 app.listen(port, () => {
-  // console.log('running server'); 
+  // console.log('running server');
 });
 app.get('/', (_request: Request, response: Response) => {
   try {
@@ -43,6 +43,7 @@ app.get('/api/companies', (_request: Request, response: Response) => {
 });
 
 app.get('/api/company/:id', (request: Request, response: Response) => {
+  const company = companies.find(company => company.hash === request.params.id)
   try {
     const company = companies.find(company => company.hash === request.params.id)
     if (company) {

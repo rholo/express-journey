@@ -20,7 +20,7 @@ const companies: ICompany[] = [
     name: 'Adereso',
     hash: 'adereso',
     avatar: '',
-    description: `Adereso es una plataforma en la nube que te ayuda a organizar 
+    description: `Adereso es una plataforma en la nube que te ayuda a organizar
     tus mensajes de WhatsApp, Facebook, Instagram, Twitter, Correo electrónico y mucho más.`,
     projects: [
       {
@@ -29,7 +29,7 @@ const companies: ICompany[] = [
         role: 'Front-end Tech Lead',
         activities: 'Desarrollo de nuevas funcionalidades, modernización de plataforma web, implementación de tareas automatizadas para control de calidad de código con analizadores de código como ESlint y Prettier, pruebas unitarias, tareas de devOps.',
         legacy: false,
-        description: `Responsable de todo el proceso de modernización de la plataforma web, 
+        description: `Responsable de todo el proceso de modernización de la plataforma web,
           organizar y planificar desarrollo de nuevas features y organización del equipo Front`,
         tags: ['AngularJS', 'Vue', 'AWS', 'Angular'],
       }
@@ -39,7 +39,7 @@ const companies: ICompany[] = [
     name: 'Mall plaza',
     hash: 'mall_plaza',
     avatar: '',
-    description: `Mallplaza es una cadena de centros comerciales chilena que se 
+    description: `Mallplaza es una cadena de centros comerciales chilena que se
     encuentran distribuidos en nueve ciudades de Chile`,
     projects: [
       {
@@ -66,7 +66,7 @@ const companies: ICompany[] = [
     name: 'Cardif',
     hash: 'cardif',
     avatar: '',
-    description: '',
+    description: 'BNP Paribas Cardif es una compañía de seguros francesa que comercializa productos de ahorro y de protección y servicios a través de una variedad de socios. BNP Paribas Cardif pertenece al Grupo BNP Paribas, uno de los bancos mejor calificados en el mundo.',
     projects: [
       {
         name: 'Devolución de primas',
@@ -74,7 +74,7 @@ const companies: ICompany[] = [
         role: 'Front-end dev & UI Designer',
         activities: '',
         description: '',
-        legacy: true,
+        legacy: false,
         tags: ['React', 'JavaScript'],
       },
       {
@@ -118,7 +118,8 @@ const companies: ICompany[] = [
         role: 'Front-end dev & UI Designer',
         activities: '',
         description: '',
-        legacy: true, tags: ['Angular', 'AngularJS'],
+        legacy: true,
+        tags: ['Angular', 'AngularJS'],
       }
     ]
   },
@@ -185,7 +186,7 @@ const companies: ICompany[] = [
     name: 'Servicio Nacional del Patrimonio Cultural',
     hash: 'dibam',
     avatar: '',
-    description: 'Develop responsive UI for main website...',
+    description: '',
     projects: [
       {
         name: 'Portal de Bibliotecas y Museos de Chile',
@@ -193,7 +194,7 @@ const companies: ICompany[] = [
         description: '',
         role: 'Front-end developer',
         legacy: false,
-        activities: '',
+        activities: 'Develop responsive UI for main website...',
         tags: ['JavaScript', 'HTML', 'CSS']
       },
       {
@@ -224,4 +225,4 @@ const companies: ICompany[] = [
     }]
   }
 ]
-export default companies 
+export default companies
